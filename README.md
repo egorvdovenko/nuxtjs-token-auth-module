@@ -1,4 +1,4 @@
-# Token auth
+# Nuxt.js token auth module
 
 Token based authentication module for Nuxt.js apps.
 
