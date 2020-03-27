@@ -6,7 +6,7 @@ Token based authentication module for Nuxt.js apps.
 
 Install with npm:
 ```bash
-npm install nuxt-token-auth @nuxtjs/axios
+npm install nuxt-token-auth-module @nuxtjs/axios
 ```
 
 Edit `nuxt.config.js`:
@@ -15,7 +15,7 @@ Edit `nuxt.config.js`:
 mode: 'spa',
 modules: [
   // Modules connection order matters
-  'nuxt-token-auth',
+  'nuxt-token-auth-module',
   '@nuxtjs/axios'
 ],
 tokenAuth: {
