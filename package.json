@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-token-auth",
+  "version": "1.1.1",
+  "description": "Token based authentication module for Nuxt.js",
+  "author": "yodaskillme@gmail.com",
+  "license": "ISC",
+  "main": "lib/module.js",
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/egorvdovenko/token-auth-module.git"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "example": "nuxt example",
+    "lint": "eslint --ext .js example lib test",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@nuxtjs/axios": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "body-parser": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest"
+  }
+}
