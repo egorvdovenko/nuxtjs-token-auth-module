@@ -94,6 +94,34 @@ this.$tokenAuth.logout([data])
 // [data] - data object for axios request
 ```
 
+### getToken
+
+```js
+this.$tokenAuth.getToken()
+// return auth token 
+```
+
+### getRefreshToken
+
+```js
+this.$tokenAuth.getRefreshToken()
+// return refresh token 
+```
+
+### setToken
+
+```js
+this.$tokenAuth.setToken(token)
+// setting auth token 
+```
+
+### setToken
+
+```js
+this.$tokenAuth.setRefreshToken(refreshToken)
+// setting refresh token 
+```
+
 ## License
 
 [ISC](https://opensource.org/licenses/ISC)
