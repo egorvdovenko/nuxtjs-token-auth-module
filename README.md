@@ -115,7 +115,7 @@ this.$tokenAuth.setToken(token)
 // setting auth token 
 ```
 
-### setToken
+### setRefreshToken
 
 ```js
 this.$tokenAuth.setRefreshToken(refreshToken)
