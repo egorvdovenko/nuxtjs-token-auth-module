@@ -11,8 +11,6 @@ npm install nuxt-token-auth-module @nuxtjs/axios
 
 Edit `nuxt.config.js`:
 ```js
-// Nuxt application should be launched in 'spa' mode
-mode: 'spa',
 modules: [
   // Modules connection order matters
   'nuxt-token-auth-module',
@@ -39,6 +37,7 @@ router: {
 ```
 
 In case of global usage, You can set `tokenAuth` option to `false` in a specific component and the middleware will ignore that route.
+
 ```js
 export default {
   tokenAuth: false
@@ -120,6 +119,68 @@ this.$tokenAuth.setToken(token)
 ```js
 this.$tokenAuth.setRefreshToken(refreshToken)
 // setting refresh token 
+```
+
+## Usage example
+
+### Login
+
+```js
+<script>
+export default {
+  data () {
+    return {
+      login: 'login',
+      password: 'password'
+    }
+  },
+  methods: {
+    onLoginSubmit () {
+      this.$tokenAuth
+        .login({
+          data: {
+            login: this.login,
+            password: this.password
+          }
+        })
+        .then(() => {
+          this.$router.push({
+            name: 'index'
+          })
+        })
+        .catch((error) => {
+          console.log('login.vue => onLoginSubmit() => error: ', error)
+        })
+    }
+  }
+}
+</script>
+```
+
+After you log in, `token` will be updated automatically if any of the requests receives a `401 Unathorized` status code and `refreshToken` is not expired.
+If the lifetime of both tokens has expired, then you will be redirected to the `login` route from settings `redirect` section.
+
+### Logout
+
+```js
+<script>
+export default {
+  methods: {
+    onLogoutSubmit () {
+      this.$tokenAuth
+        .logout()
+        .then(() => {
+          this.$router.push({
+            name: 'login'
+          })
+        })
+        .catch((error) => {
+          console.log('index.vue => onLogoutSubmit() => error: ', error)
+        })
+    }
+  }
+}
+</script>
 ```
 
 ## License

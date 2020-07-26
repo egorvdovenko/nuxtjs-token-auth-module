@@ -1,3 +1,3 @@
 export default function (req, res, next) {
-  next()
+  next({ statusCode: 200 })
 }

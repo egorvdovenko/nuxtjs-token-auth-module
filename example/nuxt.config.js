@@ -3,7 +3,7 @@ import bodyParser from 'body-parser'
 const { resolve } = require('path')
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
   rootDir: resolve(__dirname, '..'),
   buildDir: resolve(__dirname, '.nuxt'),
   srcDir: __dirname,
