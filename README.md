@@ -97,28 +97,60 @@ this.$tokenAuth.logout([data])
 
 ```js
 this.$tokenAuth.getToken()
-// return auth token 
+// return auth token in 'spa' mode
+
+this.$tokenAuth.getToken(context)
+// return auth token in 'universal' mode
 ```
 
 ### getRefreshToken
 
 ```js
 this.$tokenAuth.getRefreshToken()
-// return refresh token 
+// return refresh token in 'spa' mode
+
+this.$tokenAuth.getRefreshToken(context)
+// return refresh token in 'universal' mode 
 ```
 
 ### setToken
 
 ```js
 this.$tokenAuth.setToken(token)
-// setting auth token 
+// setting auth token in 'spa' mode
+
+this.$tokenAuth.setToken(token, context)
+// setting auth token in 'universal' mode
 ```
 
 ### setRefreshToken
 
 ```js
 this.$tokenAuth.setRefreshToken(refreshToken)
-// setting refresh token 
+// setting refresh token in 'spa' mode
+
+this.$tokenAuth.setRefreshToken(refreshToken, context)
+// setting refresh token in 'universal' mode
+```
+
+### removeToken
+
+```js
+this.$tokenAuth.removeToken()
+// remove token in 'spa' mode
+
+this.$tokenAuth.removeToken(context)
+// remove token in 'universal' mode 
+```
+
+### removeRefreshToken
+
+```js
+this.$tokenAuth.removeRefreshToken()
+// remove refresh token in 'spa' mode
+
+this.$tokenAuth.removeRefreshToken(context)
+// remove refresh token in 'universal' mode 
 ```
 
 ## Usage example
