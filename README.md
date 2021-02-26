@@ -49,27 +49,34 @@ export default {
 Example:
 ```js
 {
-    // Each endpoint is a required option.
-    // It will be used to make requests using axios.
-    endpoints: {
-      refresh: {
-        url: 'http://localhost:3000/api/refresh',
-        method: 'post'
-      },
-      login: {
-        url: 'http://localhost:3000/api/login',
-        method: 'post'
-      },
-      logout: {
-        url: 'http://localhost:3000/api/logout',
-        method: 'post'
-      }
+  // Each endpoint is a required option.
+  // It will be used to make requests using axios.
+  endpoints: {
+    refresh: {
+      url: 'http://localhost:3000/api/refresh',
+      method: 'post'
     },
-    // Each redirect is a required option.
-    // It will be used to make redirect, after failed loggedIn check or refresh request.
-    redirects: {
-      login: '/login'
+    login: {
+      url: 'http://localhost:3000/api/login',
+      method: 'post'
+    },
+    logout: {
+      url: 'http://localhost:3000/api/logout',
+      method: 'post'
     }
+  },
+  // Each redirect is a required option.
+  // It will be used to make redirect, after failed loggedIn check or refresh request.
+  redirects: {
+    login: '/login'
+  },
+  // It will be used to set cookie options.
+  cookie: {
+    // Default path is '/'.
+    path: '',
+    // Default domain is current.
+    domain: '',
+  }
 }
 ```
 

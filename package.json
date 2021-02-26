@@ -1,11 +1,14 @@
 {
   "name": "nuxt-token-auth-module",
-  "version": "2.2.3",
+  "version": "2.3.0",
   "description": "Token based authentication module for Nuxt.js",
   "author": "yodaskillme@gmail.com",
   "license": "ISC",
   "main": "lib/module.js",
-  "keywords": ["nuxtjs", "token-auth"],
+  "keywords": [
+    "nuxtjs",
+    "token-auth"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/egorvdovenko/token-auth-module"
