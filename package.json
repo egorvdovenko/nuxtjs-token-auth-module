@@ -5,7 +5,10 @@
   "author": "yodaskillme@gmail.com",
   "license": "ISC",
   "main": "lib/module.js",
-  "keywords": ["nuxtjs", "token-auth"],
+  "keywords": [
+    "nuxtjs",
+    "token-auth"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/egorvdovenko/token-auth-module"
