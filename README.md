@@ -100,6 +100,13 @@ this.$tokenAuth.logout([data])
 // [data] - data object for axios request
 ```
 
+### refresh
+
+```js
+this.$tokenAuth.refresh(token, refreshToken)
+// return Promise object with axios request
+```
+
 ### getToken
 
 ```js
